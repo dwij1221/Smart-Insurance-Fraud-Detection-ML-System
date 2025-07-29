@@ -1,12 +1,30 @@
-# React + Vite
+Smart Insurance Claim Fraud Detection System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Real Insurance Claims Dataset]
+        ↓
+[Data Cleaning & Feature Engineering]
+        ↓
+[EDA & Visualization]
+        ↓
+[Model Training & Evaluation]
+(XGBoost / CatBoost / Linear Regression / Random Forest)
+        ↓
+[Fraud Risk Scoring + Metrics]
+        ↓
+[Explainable AI (SHAP & LIME)]
+        ↓
+[Decision Engine]
+(Approve | Flag | Manual Review)
+        ↓
+[FastAPI Model Serving]
+        ↓
+[Frontend: React UI + Flask Backend]
 
-Currently, two official plugins are available:
+This is an end-to-end AI system designed to detect fraud in vehicle insurance claims using a real-world dataset with 60+ features. The project includes deep data analysis, feature engineering (Pandas, NumPy), and EDA (Seaborn, Matplotlib).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Machine learning models like CatBoost, XGBoost, Random Forest, and Linear Regression were trained, with CatBoost delivering the best results (Accuracy: 81%, ROC AUC: 0.8213) using class weights for handling imbalanced data. Explainable AI tools SHAP and LIME were used to make predictions transparent and trustworthy.
 
-## Expanding the ESLint configuration
+A custom decision engine classifies claims as Approve, Flag, or Manual Review based on risk scores. The model is served through a FastAPI backend, integrated into a clean, pastel-themed React + Flask dashboard. Inputs are collected via a multi-step form.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The full system is Dockerized and hosted on Render, providing scalable real-time predictions. It helps insurers reduce manual review time, cut down on fraudulent payouts, and meet compliance standards through model interpretability.
+
