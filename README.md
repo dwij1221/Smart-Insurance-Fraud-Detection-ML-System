@@ -20,11 +20,16 @@ Smart Insurance Claim Fraud Detection System
         ↓
 [Frontend: React UI + Flask Backend]
 
-This is an end-to-end AI system designed to detect fraud in vehicle insurance claims using a real-world dataset with 60+ features. The project includes deep data analysis, feature engineering (Pandas, NumPy), and EDA (Seaborn, Matplotlib).
 
-Machine learning models like CatBoost, XGBoost, Random Forest, and Linear Regression were trained, with CatBoost delivering the best results (Accuracy: 81%, ROC AUC: 0.8213) using class weights for handling imbalanced data. Explainable AI tools SHAP and LIME were used to make predictions transparent and trustworthy.
+Tech Stack:
+Python, Pandas, NumPy, Seaborn, Matplotlib, CatBoost, XGBoost, SHAP, LIME, FastAPI, Flask, React.js, Tailwind CSS, Axios, Docker, Render
 
-A custom decision engine classifies claims as Approve, Flag, or Manual Review based on risk scores. The model is served through a FastAPI backend, integrated into a clean, pastel-themed React + Flask dashboard. Inputs are collected via a multi-step form.
+An end-to-end AI system built to detect fraud in vehicle insurance claims using 60+ real-world features. It includes in-depth data analysis, feature engineering (Pandas, NumPy), and EDA (Seaborn, Matplotlib).
 
-The full system is Dockerized and hosted on Render, providing scalable real-time predictions. It helps insurers reduce manual review time, cut down on fraudulent payouts, and meet compliance standards through model interpretability.
+Multiple models were tested, with CatBoost achieving the best performance (Accuracy: 81%, ROC AUC: 0.8213) using class weights for imbalance. SHAP and LIME enabled explainable predictions.
+
+A custom decision engine flags claims as Approve, Manual Review, or Fraud. Served via FastAPI, the model powers a React + Flask dashboard with a pastel UI and multi-step input form.
+
+Dockerized and deployed on Render for real-time predictions, the system helps insurers cut fraud losses, reduce manual workload, and stay audit-compliant.
+
 
